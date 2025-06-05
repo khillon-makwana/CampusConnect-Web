@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusConnect - Your Campus Community</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#4F46E5", secondary: "#7C3AED" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+          font-family: 'Inter', sans-serif;
+      }
+      .hero-section {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Strathmore_University_Student_Centre.jpg/1200px-Strathmore_University_Student_Centre.jpg?20190308141855");
+
+          background-size: cover;
+          background-position: center;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <!-- Header & Navigation -->
+    <header class="w-full">
+      <!-- Hero Section -->
+      <div class="hero-section w-full">
+        <div class="container mx-auto px-4 py-4">
+          <div class="flex justify-between items-center">
+            <h1 class="text-white text-3xl font-bold font-['Pacifico']">
+              CampusConnect
+            </h1>
+            <nav class="hidden md:block">
+              <ul class="flex space-x-8">
+                <li>
+                  <a
+                    href="CampusConnectDashboard.html"
+                    class="text-white font-medium hover:text-primary transition"
+                    >HOME</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../2. Events Page/EventsPage.html"
+                    class="text-white font-medium hover:text-primary transition"
+                    >EVENTS</a
+                  >
+                </li>
+                <li>
+					<a 
+					 href="../3. Jobs Page/JobsPage.html"
+                     class="text-white font-medium hover:text-primary transition"
+                    >JOBS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../4. Study Groups Page/StudyGroups Page.html"
+                    class="text-white font-medium hover:text-primary transition"
+                    >STUDY GROUPS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../5. Articles/articles.html"
+                    class="text-white font-medium hover:text-primary transition"
+                    >ARTICLES</a
+                  >
+                </li>
+				  <li>
+                  <a
+                    href="../6. Resources/studyresources.html"
+                    class="text-white font-medium hover:text-primary transition"
+                    >RESOURCES</a
+                  >
+                </li>
+				  <button class="px-3 py-1.5 bg-black text-white border border-black rounded-button text-sm font-medium hover:bg-primary whitespace-nowrap">Log Out</button>
+              </ul>
+				
+            </nav>
+          </div>
+        </div>
+		  
+
+        <div class="container mx-auto px-4 py-20">
+          <div class="max-w-2xl">
+            <h2 class="text-white text-4xl md:text-5xl font-bold mb-4">
+              Your Campus Community Hub
+            </h2>
+            <p class="text-white text-lg mb-8">
+              Connect with fellow students, discover events, find study groups,
+              and explore job opportunities all in one place. Join our vibrant
+              campus community today!
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+      <!-- Events Section -->
+      <section class="mb-16">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-3xl font-bold text-gray-900">UPCOMING EVENTS</h2>
+          <a
+            href="../2. Events Page/EventsPage.html"
+            class="bg-black text-white px-4 py-2 !rounded-button text-sm font-medium hover:bg-gray-800 transition whitespace-nowrap"
+            >VIEW MORE</a
+          >
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Event Card 1 -->
+          <div class="bg-white rounded shadow-md overflow-hidden">
+            <div class="h-56 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1678646142794-253fdd20fa05?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Food Festival"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Annual Food Festival</h3>
+              <p class="text-gray-600 mb-4">
+                Join us for a culinary journey around the world at our annual
+                food festival. Sample dishes from different cultures and connect
+                with fellow foodies.
+              </p>
+              <div class="flex items-center text-sm text-gray-500">
+                <div class="flex items-center mr-4">
+                  <div class="w-4 h-4 flex items-center justify-center mr-1">
+                    <i class="ri-calendar-line"></i>
+                  </div>
+                  <span>June 4, 2025</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-4 h-4 flex items-center justify-center mr-1">
+                    <i class="ri-map-pin-line"></i>
+                  </div>
+                  <span>Student Centre</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 2 -->
+          <div class="bg-white rounded shadow-md overflow-hidden">
+            <div class="h-56 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1664303900593-53c869c8b9fb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fHRlY2glMjBldmVudHN8ZW58MHx8MHx8fDA%3D"
+                alt="Tech Networking"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Tech Networking Mixer</h3>
+              <p class="text-gray-600 mb-4">
+                Connect with industry professionals and fellow tech enthusiasts.
+                Perfect opportunity to expand your network and explore career
+                possibilities.
+              </p>
+              <div class="flex items-center text-sm text-gray-500">
+                <div class="flex items-center mr-4">
+                  <div class="w-4 h-4 flex items-center justify-center mr-1">
+                    <i class="ri-calendar-line"></i>
+                  </div>
+                  <span>June 5, 2025</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-4 h-4 flex items-center justify-center mr-1">
+                    <i class="ri-map-pin-line"></i>
+                  </div>
+                  <span>Apple Center</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Event Card 3 -->
+          <div class="bg-white rounded shadow-md overflow-hidden">
+            <div class="h-56 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                alt="Blach Ticket Concert"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <h3 class="text-xl font-bold mb-2">Black Ticket Concert</h3>
+              <p class="text-gray-600 mb-4">
+                Enjoy live performances from talented student musicians and
+                special guest artists. A perfect way to unwind and celebrate the
+                season.
+              </p>
+              <div class="flex items-center text-sm text-gray-500">
+                <div class="flex items-center mr-4">
+                  <div class="w-4 h-4 flex items-center justify-center mr-1">
+                    <i class="ri-calendar-line"></i>
+                  </div>
+                  <span>June 12, 2025</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-4 h-4 flex items-center justify-center mr-1">
+                    <i class="ri-map-pin-line"></i>
+                  </div>
+                  <span>Main Auditorium</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Job Opportunities Section -->
+      <section class="mb-16">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-3xl font-bold text-gray-900">JOB OPPORTUNITIES</h2>
+          <a
+            href="../3. Jobs Page/JobsPage.html"
+            class="bg-black text-white px-4 py-2 !rounded-button text-sm font-medium hover:bg-gray-800 transition whitespace-nowrap"
+            >VIEW MORE</a
+          >
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Job Card 1 -->
+          <div class="bg-white rounded shadow-md overflow-hidden">
+            <div
+              class="h-48 overflow-hidden bg-gray-100 flex items-center justify-center"
+            >
+              <img
+                src="https://nipashebiz.co.ke/wp-content/uploads/2024/09/5-June-Brand-Valuation.jpg"
+                alt="Software Developer"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                  >Internship</span
+                >
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+                  >Off-Campus</span
+                >
+              </div>
+              <h3 class="text-xl font-bold mb-2">Software Developer Intern</h3>
+              <p class="text-gray-600 mb-4">
+                Safaricom is looking for passionate software developers
+                interns to join their team for the summer. Learn from industry
+                experts and work on real projects.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-500 text-sm">Posted 2 days ago</span>
+                <a href="../3. Jobs Page/JobsPage.html" class="text-primary font-medium hover:underline"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Job Card 2 -->
+          <div class="bg-white rounded shadow-md overflow-hidden">
+            <div
+              class="h-48 overflow-hidden bg-gray-100 flex items-center justify-center"
+            >
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/thumb/6/6f/Strathmore_university_updated_logo.jpg/250px-Strathmore_university_updated_logo.jpg"
+                alt="Marketing Assistant"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                  >Part-time</span
+                >
+                <span
+                  class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+                  >On-campus</span
+                >
+              </div>
+              <h3 class="text-xl font-bold mb-2">Marketing Assistant</h3>
+              <p class="text-gray-600 mb-4">
+                The University Marketing Department is seeking a creative
+                student to assist with social media management and content
+                creation for campus events.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-500 text-sm">Posted 1 week ago</span>
+                <a href="../3. Jobs Page/JobsPage.html" class="text-primary font-medium hover:underline"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Job Card 3 -->
+          <div class="bg-white rounded shadow-md overflow-hidden">
+            <div
+              class="h-48 overflow-hidden bg-gray-100 flex items-center justify-center"
+            >
+              <img
+                src="data:image/jpeg;base64,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"
+                alt="Research Assistant"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                  >Part-time</span
+                >
+                <span
+                  class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded ml-2"
+                  >On-campus</span
+                >
+              </div>
+              <h3 class="text-xl font-bold mb-2">Research Assistant</h3>
+              <p class="text-gray-600 mb-4">
+                Join Dr. Anthony Khajira's research team in the ICT
+                Department. Help write codes and analyze data for
+                groundbreaking research in SWIFT.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-500 text-sm">Posted 3 days ago</span>
+                <a href="../3. Jobs Page/JobsPage.html" class="text-primary font-medium hover:underline"
+                  >Apply Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Study Groups Section -->
+      <section class="mb-16">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-3xl font-bold text-gray-900">STUDY GROUPS</h2>
+          <a
+            href="../4. Study Groups Page/StudyGroups Page.html"
+            class="bg-black text-white px-4 py-2 !rounded-button text-sm font-medium hover:bg-gray-800 transition whitespace-nowrap"
+            >VIEW MORE</a
+          >
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Study Group 1 -->
+          <div class="bg-white rounded shadow-md overflow-hidden">
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center">
+                  <div
+                    class="w-12 h-12 rounded-full overflow-hidden mr-3 bg-gray-200"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1609697299491-69d2d5ed2c36?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGNhbGN1bHVzfGVufDB8fDB8fHww"
+                      alt="Profile"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="font-bold">Advanced Calculus</h3>
+                    <p class="text-sm text-gray-500">Led by Alice Muia</p>
+                  </div>
+                </div>
+                <a
+                 href="../4. Study Groups Page/StudyGroups Page.html"
+                  class="bg-black text-white px-3 py-1 text-xs !rounded-button font-medium hover:bg-gray-800 transition whitespace-nowrap"
+                  >VIEW</a
+                >
+              </div>
+              <p class="text-gray-600 mb-4">Intensive study group delving into advanced calculus concepts and problem-solving techniques. Strengthen your understanding of limits, derivatives, integrals, and differential equations while exploring real-world applications. Boost your analytical skills and prepare for exams with collaborative learning and structured exercises</p>
+              <div
+                class="flex items-center text-sm text-gray-500 justify-between"
+              >
+                <div class="flex items-center">
+                  <div class="w-4 h-4 flex items-center justify-center mr-1">
+                    <i class="ri-user-line"></i>
+                  </div>
+                  <span>12 members</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-4 h-4 flex items-center justify-center mr-1">
+                    <i class="ri-calendar-line"></i>
+                  </div>
+                  <span>Thursdays, 6PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Study Group 2 -->
+          <div class="bg-white rounded shadow-md overflow-hidden">
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center">
+                  <div
+                    class="w-12 h-12 rounded-full overflow-hidden mr-3 bg-gray-200"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YWxnb3JpdGhtc3xlbnwwfHwwfHx8MA%3D%3D"
+                      alt="Profile"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="font-bold">Data Structures and Algorithms</h3>
+                    <p class="text-sm text-gray-500">Led by Kelvin Ouma</p>
+                  </div>
+                </div>
+                <a
+                  href="../4. Study Groups Page/StudyGroups Page.html"
+                  class="bg-black text-white px-3 py-1 text-xs !rounded-button font-medium hover:bg-gray-800 transition whitespace-nowrap"
+                  >VIEW</a
+                >
+              </div>
+              <p class="text-gray-600 mb-4">
+                Intensive study group focusing on data structures and algorithm optimization.Strengthen your problem-solving skills with hands-on exercises in arrays, linked lists, trees, graphs, and hash maps. Prepare for coding interviews and exams while deepening your understanding of efficient data management!                                </p>
+              <div
+                class="flex items-center text-sm text-gray-500 justify-between"
+              >
+                <div class="flex items-center">
+                  <div class="w-4 h-4 flex items-center justify-center mr-1">
+                    <i class="ri-user-line"></i>
+                  </div>
+                  <span>8 members</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-4 h-4 flex items-center justify-center mr-1">
+                    <i class="ri-calendar-line"></i>
+                  </div>
+                  <span>Tuesdays, 7PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Study Group 3 -->
+          <div class="bg-white rounded shadow-md overflow-hidden">
+            <div class="p-6">
+              <div class="flex items-center justify-between mb-4">
+                <div class="flex items-center">
+                  <div
+                    class="w-12 h-12 rounded-full overflow-hidden mr-3 bg-gray-200"
+                  >
+                    <img
+                      src="https://images.unsplash.com/photo-1531994745117-86fce1dac8b5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z2VybWFufGVufDB8fDB8fHww"
+                      alt="Picture of Germany"
+                      class="w-full h-full object-cover"
+                    />
+                  </div>
+                  <div>
+                    <h3 class="font-bold">German Conversation</h3>
+                    <p class="text-sm text-gray-500">Led by Joseph Karuri</p>
+                  </div>
+                </div>
+                <a
+                  href="../4. Study Groups Page/StudyGroups Page.html"
+                  class="bg-black text-white px-3 py-1 text-xs !rounded-button font-medium hover:bg-gray-800 transition whitespace-nowrap"
+                  >VIEW</a
+                >
+              </div>
+              <p class="text-gray-600 mb-4">Join an engaging study group focused on mastering advanced German. Improve fluency, refine grammar, and expand vocabulary through interactive discussions and practical exercises. Dive into cultural nuances and real-world communication to boost confidence for exams or everyday conversations.</p>
+              <div
+                class="flex items-center text-sm text-gray-500 justify-between"
+              >
+                <div class="flex items-center">
+                  <div class="w-4 h-4 flex items-center justify-center mr-1">
+                    <i class="ri-user-line"></i>
+                  </div>
+                  <span>15 members</span>
+                </div>
+                <div class="flex items-center">
+                  <div class="w-4 h-4 flex items-center justify-center mr-1">
+                    <i class="ri-calendar-line"></i>
+                  </div>
+                  <span>Wednesdays, 5PM</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Articles Section -->
+      <section class="mb-16">
+        <div class="flex justify-between items-center mb-8">
+          <h2 class="text-3xl font-bold text-gray-900">LATEST ARTICLES</h2>
+          <a
+            href="../5. Articles/articles.html"
+            class="bg-black text-white px-4 py-2 !rounded-button text-sm font-medium hover:bg-gray-800 transition whitespace-nowrap"
+            >VIEW MORE</a
+          >
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Article 1 -->
+          <div class="bg-white rounded shadow-md overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1683135216954-ab7130031b44?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGJsYWNrJTIwc3R1ZGVudCUyMHN0dWR5aW5nfGVufDB8fDB8fHww"
+                alt="Study Tips"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span
+                  class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                  >Academic</span
+                >
+              </div>
+              <h3 class="text-xl font-bold mb-2">
+                10 Effective Study Techniques for CATS and Main Exam
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Discover science-backed study methods that can help you retain
+                information better and prepare effectively for your final exams.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-500 text-sm">May 25, 2025</span>
+                <a href="../5. Articles/articles.html" class="text-primary font-medium hover:underline"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 2 -->
+          <div class="bg-white rounded shadow-md overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://plus.unsplash.com/premium_photo-1664382465607-420346d391bd?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVudGFsJTIwd2VsbG5lc3N8ZW58MHx8MHx8fDA%3D"
+                alt="Mental Health"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span
+                  class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                  >Wellness</span
+                >
+              </div>
+              <h3 class="text-xl font-bold mb-2">
+                Maintaining Mental Health During Exam Season
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Learn practical strategies to manage stress and anxiety during
+                high-pressure academic periods while maintaining your wellbeing.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-500 text-sm">May 22, 2025</span>
+                <a href="../5. Articles/articles.html" class="text-primary font-medium hover:underline"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Article 3 -->
+          <div class="bg-white rounded shadow-md overflow-hidden">
+            <div class="h-48 overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1677594333407-4610c44099a6?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDh8fGJsYWNrJTIwcHJvZmVzaW9uYWxzJTIwY29ubmVjdGluZ3xlbnwwfHwwfHx8MA%3D%3D"
+                alt="Career Tips"
+                class="w-full h-full object-cover object-top"
+              />
+            </div>
+            <div class="p-6">
+              <div class="flex items-center mb-3">
+                <span
+                  class="bg-purple-100 text-purple-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                  >Career</span
+                >
+              </div>
+              <h3 class="text-xl font-bold mb-2">
+                Building Your Professional Network as a Student
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Discover how to make meaningful professional connections while
+                still in college that can help launch your career after
+                graduation.
+              </p>
+              <div class="flex justify-between items-center">
+                <span class="text-gray-500 text-sm">May 20, 2025</span>
+                <a href="../5. Articles/articles.html" class="text-primary font-medium hover:underline"
+                  >Read More</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center text-center">
+          <h3 class="text-xl font-['Pacifico'] mb-3">CampusConnect</h3>
+          <p class="text-gray-400 mb-4 max-w-md text-sm">
+            Your all-in-one platform for campus life, connecting students with
+            opportunities, events, and each other.
+          </p>
+          <div class="flex space-x-6 mb-4">
+            <a href="../1. Dashboard/CampusConnectDashboard.html" class="text-gray-400 hover:text-white transition"
+              >Home</a
+            >
+            <a href="../2. Events Page/EventsPage.html" class="text-gray-400 hover:text-white transition"
+              >Events</a
+            >
+            <a href="../3. Jobs Page/JobsPage.html" class="text-gray-400 hover:text-white transition"
+              >Jobs</a
+            >
+            <a href="../4. Study Groups Page/StudyGroups Page.html" class="text-gray-400 hover:text-white transition"
+              >Study Groups</a
+            >
+            <a href="../5. Articles/articles.html" class="text-gray-400 hover:text-white transition"
+              >Articles</a
+            >
+          </div>
+          <div class="flex space-x-4 mb-4">
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-facebook-fill"></i>
+              </div>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-twitter-x-fill"></i>
+              </div>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-instagram-fill"></i>
+              </div>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-linkedin-fill"></i>
+              </div>
+            </a>
+          </div>
+          <div
+            class="border-t border-gray-800 w-full mt-4 pt-4 text-center text-gray-400"
+          >
+            <p class="text-sm">
+              &copy; 2025 CampusConnect. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script id="navToggle">
+      document.addEventListener("DOMContentLoaded", function () {
+      //Mobile navigation toggle functionality would go here
+		  //I can choose to remove this.
+		  //Doing research on it but I kinda get the gist.
+      //Probalbly leave it for js but......
+      });
+    </script>
+  </body>
+</html>
+

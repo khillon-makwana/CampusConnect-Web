@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+body {
+	font-family: Arial;
+	background-color: whitesmoke;
+	margin: 0;
+	padding: 0;
+}
+
+.footer-header {
+	color: white;
+}
+
+.footer {
+	background-color: #020037;
+	color: grey;
+	text-align: center;
+	padding: 50px;
+}
+
+.footer .quick-links {
+	font-weight: bold;
+	padding-top: 20px;
+}
+
+.footer a {
+	color: grey;
+	text-decoration: none;
+	margin-left: 30px;
+	padding: 10px
+}
+
+.footer a:hover {
+	text-decoration: underline;
+	color: white;
+}
+
+.footer .quick-links {
+	color: white;
+	font-size: 16px;
+}
+
+.wrapper {
+	max-width: 1300px;
+	margin: 0 auto;
+	padding: 20px;
+	background-color: white;
+	border-radius: 10px;
+}
+
+.article-header {
+	display: flex;
+	justify-content: space-between;
+	background-color: whitesmoke;
+	border-radius: 20px;
+	padding: 5px 80px;
+	font-weight: bold;
+	margin-bottom: 50px;
+}
+
+.edu-category {
+	background-color: lightblue;
+	padding: 4px 6px;
+	border-radius: 10px;
+	color: #050BA8;
+	font-weight: bold;
+}
+
+.prod-category {
+	background-color: #93E1A9;
+	padding: 4px 6px;
+	border-radius: 10px;
+	color: green;
+	font-weight: bold;
+}
+
+.career-category {
+	background-color: #E4C1F4;
+	padding: 4px 6px;
+	border-radius: 10px;
+	color: purple;
+	font-weight: bold;
+}
+
+.env-category {
+	background-color: #93E1A9;
+	padding: 4px 6px;
+	border-radius: 10px;
+	color: green;
+	font-weight: bold;
+}
+
+.read-time {
+	color: grey;
+}
+
+.text-container {
+	max-width: 1000px;
+	margin: 0 auto;
+	line-height: 1.5;
+}
+
+.image-container {
+	height: 500px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-tems: center;
+	background-color: white;
+}
+
+.image-container img {
+	max-height: 100%;
+	width: 100%;
+	border-radius: 10px;
+	object-fit: contain;
+}
+
+.navbar {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 20px;
+	background-color: white;
+	margin-bottom: 60px;
+}
+
+.navbar h1 {
+	margin: 0;
+	color: blue;
+}
+
+.links a {
+	margin-left: 30px;
+	text-decoration: none;
+	color: black;
+	padding: 20px
+}
+
+.links a:hover {
+	color: blue;
+	font-weight: bold;
+}
+
+.log-out {
+	background-color: white;
+	border: 2px solid blue;
+	border-radius: 10px;
+	padding: 10px;
+	width: 100px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 10px;
+}
+
+.log-out:hover {
+	background-color: blue;
+	color: white;
+}

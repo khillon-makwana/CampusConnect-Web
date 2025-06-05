@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusConnect - Job Listings</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: { primary: "#4F46E5", secondary: "#7C3AED" },
+            borderRadius: {
+              none: "0px",
+              sm: "4px",
+              DEFAULT: "8px",
+              md: "12px",
+              lg: "16px",
+              xl: "20px",
+              "2xl": "24px",
+              "3xl": "32px",
+              full: "9999px",
+              button: "8px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      :where([class^="ri-"])::before { content: "\f3c2"; }
+      body {
+          font-family: 'Inter', sans-serif;
+      }
+      
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 min-h-screen">
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <div class="container mx-auto px-4 py-4">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center">
+            <h1 class="text-2xl font-['Pacifico'] text-primary mr-8">
+            CampusConnect
+          </h1>
+            <nav class="hidden md:block">
+              <ul class="flex space-x-8">
+                <li>
+                  <a 		 
+					href="../1. Dashboard/CampusConnectDashboard.html"
+                    class="text-gray-600 font-medium hover:text-primary transition"
+                    >HOME</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../2. Events Page/EventsPage.html"
+                    class="text-gray-600 font-medium hover:text-primary transition"
+                    >EVENTS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../3. Jobs Page/JobsPage.html"
+                    class="text-primary font-medium border-b-2 border-primary pb-1 transition"
+                    >JOBS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../4. Study Groups Page/StudyGroups Page.html"
+                    class="text-gray-600 font-medium hover:text-primary transition"
+                    >STUDY GROUPS</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="../5. Articles/articles.html"
+                    class="text-gray-600 font-medium hover:text-primary transition"
+                    >ARTICLES</a
+                  >
+                </li>
+				  <li>
+                  <a
+                    href="../6. Resources/studyresources.html"
+                    class="text-gray-600 font-medium hover:text-primary transition"
+                    >RESOURCES</a
+                  >
+                </li>
+				  <button class="px-3 py-1.5 bg-white text-primary border border-primary rounded-button text-sm font-medium hover:bg-primary/5 whitespace-nowrap">Log Out</button>
+              </ul>
+            </nav>
+          </div>
+         
+        </div>
+      </div>
+    </header>
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12">
+      <div class="flex justify-between items-center mb-8">
+        <div>
+          <h1 class="text-3xl font-bold text-gray-900 mb-2">
+            Job Opportunities
+          </h1>
+          <p class="text-gray-600">
+            Find internships, part-time jobs, and career opportunities
+          </p>
+        </div>
+        <button
+          class="bg-primary text-white px-4 py-2 !rounded-button font-medium hover:bg-opacity-90 transition whitespace-nowrap flex items-center"
+        >
+          <div class="w-4 h-4 flex items-center justify-center mr-2">
+            <i class="ri-add-line"></i>
+          </div>
+          Post a Job
+        </button>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <!-- Job Card 1 -->
+        <div
+          class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition"
+        >
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">
+                Software Engineering Intern
+              </h3>
+              <p class="text-gray-600">Safaricom .</p>
+            </div>
+            <span
+              class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
+              >Internship</span
+            >
+          </div>
+          <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
+            <div class="flex items-center">
+              <div class="w-4 h-4 flex items-center justify-center mr-1">
+                <i class="ri-map-pin-line"></i>
+              </div>
+              <span>Nairobi, Kenya</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-4 h-4 flex items-center justify-center mr-1">
+                <i class="ri-money-dollar-circle-line"></i>
+              </div>
+              <span>$25-30/hour</span>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Join our dynamic team to work on cutting-edge web applications using
+            React and Node.js.
+          </p>
+          <div class="flex items-center justify-between">
+            <div class="flex gap-2">
+              <span
+                class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                >JavaScript</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                >React</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                >Node.js</span
+              >
+            </div>
+            <a href="#" class="text-primary font-medium hover:underline"
+              >Apply Now</a
+            >
+          </div>
+        </div>
+        <!-- Job Card 2 -->
+        <div
+          class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition"
+        >
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">
+                Data Science Research Assistant
+              </h3>
+              <p class="text-gray-600">University Research Lab</p>
+            </div>
+            <span
+              class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded"
+              >Part-time</span
+            >
+          </div>
+          <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
+            <div class="flex items-center">
+              <div class="w-4 h-4 flex items-center justify-center mr-1">
+                <i class="ri-map-pin-line"></i>
+              </div>
+              <span>On Campus</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-4 h-4 flex items-center justify-center mr-1">
+                <i class="ri-money-dollar-circle-line"></i>
+              </div>
+              <span>$18/hour</span>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Assist with machine learning research projects and data analysis.
+          </p>
+          <div class="flex items-center justify-between">
+            <div class="flex gap-2">
+              <span
+                class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                >Python</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                >Machine Learning</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                >Statistics</span
+              >
+            </div>
+            <a href="#" class="text-primary font-medium hover:underline"
+              >Apply Now</a
+            >
+          </div>
+        </div>
+		  <!-- Job Card 3 -->
+        <div
+          class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition"
+        >
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">
+                Software Engineer
+              </h3>
+              <p class="text-gray-600">Equity Bank.</p>
+            </div>
+            <span
+              class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
+              >Full-time</span
+            >
+          </div>
+          <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
+            <div class="flex items-center">
+              <div class="w-4 h-4 flex items-center justify-center mr-1">
+                <i class="ri-map-pin-line"></i>
+              </div>
+              <span>Nairobi, Kenya</span></div>
+            <div class="flex items-center">
+              <div class="w-4 h-4 flex items-center justify-center mr-1">
+                <i class="ri-money-dollar-circle-line"></i>
+              </div>
+              <span>$30-35/hour</span>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Join our dynamic team to work on cutting-edge web applications using
+            React and Node.js.
+          </p>
+          <div class="flex items-center justify-between">
+            <div class="flex gap-2">
+              <span
+                class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                >JavaScript</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                >React</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                >Node.js</span
+              >
+            </div>
+            <a href="#" class="text-primary font-medium hover:underline"
+              >Apply Now</a
+            >
+          </div>
+        </div>
+		  <!-- Job Card 4 -->
+        <div
+          class="bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition"
+        >
+          <div class="flex justify-between items-start mb-4">
+            <div>
+              <h3 class="text-xl font-bold text-gray-900">
+                Software Engineer</h3>
+              <p class="text-gray-600">Cooperative Bank.</p>
+            </div>
+            <span
+              class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded"
+              >Full-time</span
+            >
+          </div>
+          <div class="flex items-center gap-4 text-sm text-gray-500 mb-4">
+            <div class="flex items-center">
+              <div class="w-4 h-4 flex items-center justify-center mr-1">
+                <i class="ri-map-pin-line"></i>
+              </div>
+              <span>Mombasa, Kenya</span>
+            </div>
+            <div class="flex items-center">
+              <div class="w-4 h-4 flex items-center justify-center mr-1">
+                <i class="ri-money-dollar-circle-line"></i>
+              </div>
+              <span>$35-40/hour</span>
+            </div>
+          </div>
+          <p class="text-gray-600 mb-4">
+            Join our dynamic team to work on cutting-edge web applications using
+            React and Node.js.
+          </p>
+          <div class="flex items-center justify-between">
+            <div class="flex gap-2">
+              <span
+                class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                >JavaScript</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                >React</span
+              >
+              <span
+                class="bg-gray-100 text-gray-800 text-xs font-medium px-2.5 py-0.5 rounded"
+                >Node.js</span
+              >
+            </div>
+            <a href="#" class="text-primary font-medium hover:underline"
+              >Apply Now</a
+            >
+          </div>
+        </div>
+        <!-- I copy paste my first cad and just make changes -->
+      </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col items-center text-center">
+          <h3 class="text-xl font-['Pacifico'] mb-3">CampusConnect</h3>
+          <p class="text-gray-400 mb-4 max-w-md text-sm">
+            Your all-in-one platform for campus life, connecting students with
+            opportunities, events, and each other.
+          </p>
+          <div class="flex space-x-6 mb-4">
+            <a href="../1. Dashboard/CampusConnectDashboard.html" class="text-gray-400 hover:text-white transition"
+              >Home</a
+            >
+            <a href="../2. Events Page/EventsPage.html" class="text-gray-400 hover:text-white transition"
+              >Events</a
+            >
+            <a href="../3. Jobs Page/JobsPage.html" class="text-gray-400 hover:text-white transition"
+              >Jobs</a
+            >
+            <a href="../4. Study Groups Page/StudyGroups Page.html" class="text-gray-400 hover:text-white transition"
+              >Study Groups</a
+            >
+            <a href="../5. Articles/articles.html" class="text-gray-400 hover:text-white transition"
+              >Articles</a
+            >
+          </div>
+          <div class="flex space-x-4 mb-4">
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-facebook-fill"></i>
+              </div>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-twitter-x-fill"></i>
+              </div>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-instagram-fill"></i>
+              </div>
+            </a>
+            <a href="#" class="text-gray-400 hover:text-white transition">
+              <div class="w-6 h-6 flex items-center justify-center">
+                <i class="ri-linkedin-fill"></i>
+              </div>
+            </a>
+          </div>
+          <div
+            class="border-t border-gray-800 w-full mt-4 pt-4 text-center text-gray-400"
+          >
+            <p class="text-sm">
+              &copy; 2025 CampusConnect. All rights reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script id="navToggle">
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mobile navigation toggle functionality would go here
+      });
+    </script>
+    
+  </body>
+</html>
